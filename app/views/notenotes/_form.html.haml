@@ -1,0 +1,4 @@
+= form_for @note, htm:{:multipart=>true} do |f|
+	= f.text_field :title, input_html:{class:'form-control'}
+	= f.text_area :content, input_html:{class:'form-control'}
+	=f.button :submit, class:'button'
